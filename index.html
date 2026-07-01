@@ -1,0 +1,893 @@
+2026-07-1<div class="news-item">
+    <span class="tag important">置顶</span>
+    <span class="text" onclick="toggleContent(this)">
+
+</div><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>现代华曦教育 | 19年专注成人学历提升 | 自考·成考·专升本·国开</title>
+    <meta name="description" content="现代华曦教育（成都市锦江区现代华曦成人培训学校），成立于2007年，19年累计培养34,084名毕业生。与四川大学、成都开放大学等8所高校合作，提供自考、成考、专升本、国开等学历提升服务。拥有自有教务教学系统及丰富在线学习资源。教育部备案公示的正规教学点。" />
+    <meta name="keywords" content="现代华曦教育,成人学历提升,成都学历培训,自考,成考,专升本,国家开放大学,四川大学校外教学点,学历提升机构,在线学习平台" />
+    <link rel="canonical" href="https://www.xdhxjy.com/" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f3f8;
+            color: #1a2636;
+            line-height: 1.8;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            padding: 35px 40px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #e8edf5;
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+        .logo-icon {
+            font-size: 28px;
+            background: #0f2b50;
+            color: #fff;
+            width: 54px;
+            height: 54px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        .school-name { font-size: 24px; font-weight: 700; color: #0a1a34; }
+        .school-name .gold { color: #b8942e; }
+        .subhead {
+            font-size: 14px;
+            color: #5a6b86;
+            letter-spacing: 4px;
+            margin-top: 4px;
+        }
+        .subhead span {
+            background: #f0f3f8;
+            padding: 2px 14px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: #0f2b50;
+        }
+        .section-title {
+            font-size: 21px;
+            font-weight: 700;
+            color: #0a1a34;
+            border-left: 5px solid #b8942e;
+            padding-left: 16px;
+            margin: 38px 0 16px 0;
+        }
+        .section-title:first-of-type { margin-top: 0; }
+        .section-desc {
+            color: #3d4e6b;
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+        .intro-box {
+            background: #f7faff;
+            border-radius: 14px;
+            padding: 22px 26px;
+            border-left: 4px solid #b8942e;
+            font-size: 15px;
+            color: #1e2d44;
+        }
+        .intro-box .highlight-number {
+            font-size: 22px;
+            font-weight: 800;
+            color: #b8942e;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 14px;
+            margin: 6px 0 4px;
+        }
+        .course-item {
+            background: #f8faff;
+            border-radius: 12px;
+            padding: 18px 14px;
+            text-align: center;
+            border: 1px solid #e4ebf5;
+            transition: 0.2s;
+        }
+        .course-item:hover {
+            background: #f0f5ff;
+            border-color: #b8942e;
+        }
+        .course-item .icon { font-size: 26px; display: block; }
+        .course-item .name { font-weight: 700; font-size: 16px; color: #0f2b50; }
+        .course-item .desc { font-size: 13px; color: #5a6b86; }
+        .course-item .partner {
+            font-size: 12px;
+            color: #b8942e;
+            background: #f5f0e0;
+            padding: 2px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+        .work-item {
+            background: #fafcff;
+            border-radius: 12px;
+            padding: 16px 18px;
+            border: 1px solid #e8edf6;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .work-item .icon { font-size: 20px; flex-shrink: 0; }
+        .work-item .content strong { display: block; color: #0a1a34; font-size: 15px; }
+        .work-item .content span { font-size: 14px; color: #4a5b77; }
+        .requirement-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+        .requirement-item {
+            background: #fafcff;
+            border-radius: 12px;
+            padding: 16px 18px;
+            border: 1px solid #e8edf6;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .requirement-item .icon { font-size: 20px; flex-shrink: 0; }
+        .requirement-item .content strong { display: block; color: #0a1a34; font-size: 15px; }
+        .requirement-item .content span { font-size: 14px; color: #4a5b77; }
+        .advantage-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 6px 0 4px;
+        }
+        .advantage-card {
+            background: #f7faff;
+            border-radius: 14px;
+            padding: 24px 18px;
+            text-align: center;
+            border: 1px solid #e4ebf5;
+            transition: 0.2s;
+        }
+        .advantage-card:hover {
+            border-color: #b8942e;
+            box-shadow: 0 4px 16px rgba(184,148,46,0.08);
+        }
+        .advantage-card .emoji { font-size: 32px; display: block; }
+        .advantage-card h3 { font-size: 17px; color: #0a1a34; margin: 4px 0; }
+        .advantage-card p { font-size: 14px; color: #3d4e6b; }
+       <div class="news-item">
+    <span class="tag">通知</span>
+    <span class="text" onclick="toggleContent(this)">📢 
+</div> .<div class="news-item">
+    <span class="tag">案例</span>
+    <span class="text" onclick="toggleContent(this)">📖 【学员故事】从高中学历到研究生：一个“专本套读”逆袭的真实样本</span>
+    <span class="date">2026-07-04</span>
+</div><div class="news-content" style="display:none; padding:16px 20px; background:#f7faff; border-radius:10px; margin-bottom:12px; font-size:15px; line-height:1.8; color:#1e2d44;">
+
+    <p><strong>学生成功案例一</strong></p>
+    <p>更新于2026年7月4日</p>
+
+    <p><strong>奉**同学：从高中学历到研究生"专本套读"逆袭之路</strong></p>
+
+    <p><strong>引言：一张高中文凭，困了她多少年</strong></p>
+
+    <p>在别人眼里，奉同学的工作不算差，四川某市基层派出所二级警员，体制内，稳定。</p>
+
+    <p>但只有她自己清楚，那张高中文凭像一堵看不见的墙，挡在她面前：同事们多是专科、本科学历，职级比她高两级，每月工资比她多近千元。单位内部的晋升、调动、培训机会，优先给学历更高的人。</p>
+
+    <p>"你不是不努力，你只是输在了一张文凭上。"</p>
+
+    <p>这句话她没说出来，但她心里明白。2019年，她做了一个决定：用"专本套读"的方式，同时拿下专科和本科文凭。</p>
+
+    <p><strong>解决方案：专本套读，两年半抢跑</strong></p>
+
+    <p>什么是"专本套读"？是指在读专科时同步报考自考本科，两者并行推进。专科毕业时，本科也基本考完，可以无缝衔接申请本科毕业证。</p>
+
+    <p>奉*同学的选择路径是：</p>
+
+    <table>
+        <tr><th>时间</th><th>路径</th><th>学校</th><th>专业</th></tr>
+        <tr><td>2019年9月</td><td>网络教育专科</td><td>电子科技大学</td><td>计算机应用技术</td></tr>
+        <tr><td>2019年9月同期</td><td>应用型自考本科</td><td>西南财经大学</td><td>人力资源管理</td></tr>
+        <tr><td>2022年1月</td><td>专科毕业</td><td>电子科技大学</td><td>计算机应用技术</td></tr>
+        <tr><td>2022年6月</td><td>自考本科毕业</td><td>西南财经大学</td><td>人力资源管理</td></tr>
+        <tr><td>2022年10月</td><td>通过学位论文评审</td><td>西南财经大学</td><td>获学士学位</td></tr>
+        <tr><td>2023年3月</td><td>学士学位证书到手</td><td>—</td><td>—</td></tr>
+        <tr><td>2023年-2024年</td><td>考研成功上岸</td><td>—</td><td>—</td></tr>
+    </table>
+
+    <p>这个方案的难点在于：两条线同时跑，容错率极低。自考本科的平均通过周期是3-5年，大多数人需要补考、重考、延毕。而她必须在专科2.5年学制内，同步完成自考本科的全部科目，一门都不能挂，一门都不能拖。</p>
+
+    <p><strong>学习过程：疫情中的"硬扛"</strong></p>
+
+    <p>2022年，她自考本科的最后一年，也是疫情最严重的一年。作为派出所的二级警员，她的工作没有"居家办公"这回事。一级勤务、医院值守、社区管控……周末无休，连轴转是常态。</p>
+
+    <p>"那段时间，我根本分不清今天是周几。"她后来回忆说。</p>
+
+    <p>但她没有放弃。她把所有能用的碎片时间都用来复习：值班间隙、通勤路上、午休时间、深夜下班后……手机里存的全是自考资料，包里永远揣着一本教材。</p>
+
+    <p>2022年9月，她完成了自考本科全部科目考试。2022年10月，她通过学位论文评审——全部一次性通过，无一挂科。</p>
+
+    <p><strong>成果：三年换来了什么</strong></p>
+
+    <p>2022年9月，本科毕业证刚刚拿到，她就接到了人事调动通知：晋升至市区工作，职级提升，薪资同步上调。</p>
+
+    <p>2023年3月，西南财大学士学位证书到手。同年年底，参加研究生入学考试，次年考研成功上岸。从"高中学历"到"研究生在读"，完成了连续三级跳。</p>
+
+    <p><strong>她的金句</strong></p>
+
+    <p>"别问我怎么熬过来的，答案就一句话：'穷'得逼迫自己去改变现状。"</p>
+
+    <p>这句话是她在接受现代华曦教育老师回访时说的。不是"我想变得更好"，不是"我要实现人生价值"，而是一个更真实、更直接的理由："穷"得不想再穷下去了。</p>
+
+    <p>这个"穷"，既是知识和技能上的穷，也是工资上的穷，还是机会上的穷，更是职场天花板上的穷。从基层派出所二级警员到调动市区工作，学历提升对她来说，不是锦上添花，而是雪中送炭。</p>
+
+    <p><strong>给正在犹豫"要不要提升学历"的人一点参考</strong></p>
+
+    <p>奉*同学的案例有几个值得关注的特点：</p>
+
+    <p>第一，她用"专本套读"抢出了时间差。如果不是同步推进，专科毕业后还要再花3-5年考本科，等拿到本科学历时可能已经错过了晋升窗口。她选择了最难但最快的方式。</p>
+
+    <p>第二，她在最困难的条件下坚持了下来。2022年的疫情和工作强度，给了她无数个"放弃的理由"。但她没有，因为她清楚，错过这个窗口，可能再也没有机会了。</p>
+
+    <p>第三，她证明了：学历不只是"敲门砖"，更是"通行证"。从二级警员到调动市上工作，再到考研上岸，每一次跃升都伴随着学历的升级。不是有了学历就一定有结果，但没有学历连入场券都拿不到。</p>
+
+    <p><strong>后记</strong></p>
+
+    <p>奉*同学的故事，是现代华曦教育19年办学历史中最具代表性的案例之一。她不是天才，没有背景，没有捷径。她有的只是一张高中文凭、一份基层警员工作、一个"不想再穷下去"的念头，以及三年如一日咬牙坚持的行动。</p>
+
+    <p>她证明了：起点不代表终点，学历改变的不只是工资，还有人生的选项。</p>
+
+    <p style="font-size:13px; color:#8896b0; margin-top:12px; border-top:1px solid #e8edf5; padding-top:10px;">本文为"现代华曦教育学员故事"系列第1期。更多真实学员案例，请关注现代华曦教育官网动态。</p>
+
+</div> {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .news-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 18px;
+            background: #fafcff;
+            border-radius: 10px;
+            border: 1px solid #e8edf6;
+            flex-wrap: wrap;
+        }
+        .news-item .tag {
+            background: #0f2b50;
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 14px;
+            border-radius: 30px;
+            flex-shrink: 0;
+            font-weight: 600;
+        }
+        .news-item .tag.important { background: #b8942e; }
+        .news-item .text {
+            font-size: 15px;
+            color: #1a2636;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .news-item .text:hover { color: #b8942e; }
+        .news-item .date {
+            margin-left: auto;
+            font-size: 13px;
+            color: #8896b0;
+            flex-shrink: 0;
+        }
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+        .case-item {
+            background: #fafcff;
+            border-radius: 12px;
+            padding: 18px 20px;
+            border: 1px solid #e8edf6;
+            text-align: center;
+        }
+        .case-item .badge { font-size: 28px; display: block; }
+        .case-item .name { font-weight: 700; color: #0a1a34; font-size: 16px; }
+        .case-item .detail { font-size: 14px; color: #4a5b77; }
+        .case-item .school { font-size: 13px; color: #b8942e; font-weight: 600; margin-top: 4px; }
+        .contact-box {
+            background: #0a1a34;
+            color: #fff;
+            border-radius: 16px;
+            padding: 26px 32px;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .contact-box .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+        }
+        .contact-box .info div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+        }
+        .contact-box .info .label { opacity: 0.65; font-weight: 300; }
+        .contact-box .info a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s;
+        }
+        .contact-box .info a:hover { border-bottom-color: #b8942e; }
+        .contact-box .badge {
+            font-size: 13px;
+            background: rgba(184,148,46,0.2);
+            padding: 6px 18px;
+            border-radius: 30px;
+            border: 1px solid rgba(184,148,46,0.3);
+            color: #dbbc5a;
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 13px;
+            color: #7a8aa3;
+            margin-top: 26px;
+            border-top: 1px solid #e8edf5;
+            padding-top: 22px;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 18px 14px; }
+            .school-name { font-size: 19px; }
+            .section-title { font-size: 18px; }
+            .intro-box { padding: 16px; font-size: 14px; }
+            .contact-box { flex-direction: column; align-items: flex-start; }
+            .contact-box .info { flex-direction: column; gap: 10px; }
+            .news-item .date { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo-area">
+            <div class="logo-icon">华曦</div>
+            <div class="school-name">现代<span class="gold">华曦</span>教育</div>
+        </div>
+        <div class="subhead">
+            <span>19年专注成人学历提升</span> &nbsp;·&nbsp; 累计培养 <strong style="color:#b8942e;">34,084</strong> 名毕业生
+        </div>
+    </header>
+
+    <!-- 1. 机构简介 -->
+    <h2 class="section-title">🏫 机构简介</h2>
+    <div class="intro-box">
+        <p><strong>成都市锦江区现代华曦成人培训学校</strong>（简称"现代华曦教育"）成立于2007年，是经成都市锦江区教育主管部门批准成立的成人教育培训机构。</p>
+        <p style="margin-top:10px;">学校自成立以来，始终专注于成人学历提升领域，是 <strong>四川大学</strong>、<strong>国家开放大学</strong> 教育部备案公示的校外教学点，并与 <strong>西南科技大学、成都理工大学、西华大学、内江师范学院、四川旅游学院、成都开放大学</strong> 等多所高校建立长期合作关系。</p>
+        <p style="margin-top:10px; background:#f0f3f8; padding:10px 16px; border-radius:8px;">
+            📊 <strong>办学成果：</strong> 截至2026年春季，累计培养毕业生 <span class="highlight-number">34,084</span> 人，涵盖自考、成考、开放教育、网络教育（2024秋停止招生）四大类型。
+        </p>
+    </div>
+
+    <!-- 2. 学历提升类型 -->
+    <h2 class="section-title">📚 学历提升类型</h2>
+    <p class="section-desc">我校开设多种学历提升通道，合作高校覆盖四川省内多所重点院校：</p>
+    <div class="course-grid">
+        <div class="course-item">
+            <span class="icon">📖</span>
+            <div class="name">高等教育自学考试</div>
+            <div class="desc">灵活备考 · 国家承认</div>
+            <span class="partner">四川大学、西南科大·成都理工·西华大学·内江师院·四川旅院等高校应用型自考（小自考）</span>
+        </div>
+        <div class="course-item">
+            <span class="icon">📝</span>
+            <div class="name">成人高考（成教）</div>
+            <div class="desc">系统复习 · 录取率高</div>
+            <span class="partner">四川大学校外教学点</span>
+        </div>
+        <div class="course-item">
+            <span class="icon">🎓</span>
+            <div class="name">专升本强化班</div>
+            <div class="desc">专科→本科 · 定向提升</div>
+            <span class="partner">多所合作高校</span>
+        </div>
+        <div class="course-item">
+            <span class="icon">📜</span>
+            <div class="name">国家开放大学</div>
+            <div class="desc">免试入学 · 网络学习</div>
+            <span class="partner">国开校外学习中心（编码5115700）</span>
+        </div>
+    </div>
+
+    <!-- 3. 办学资质与合作 -->
+    <h2 class="section-title">🏢 办学资质与合作</h2>
+    <p class="section-desc">我校依法合规办学，资质齐全，拥有自主教学平台及丰富学习资源：</p>
+    <div class="work-grid">
+        <div class="work-item">
+            <span class="icon">✅</span>
+            <div class="content"><strong>办学许可证</strong><span>教民2号，有效期2026-2029年，举办者：成都洋爔教育发展有限公司</span></div>
+        </div>
+        <div class="work-item">
+            <span class="icon">🏛️</span>
+            <div class="content"><strong>教育部备案公示</strong><span>四川大学校外教学点（2024、2025年备案）；国家开放大学校外教学点（2024、2025年备案）</span></div>
+        </div>
+        <div class="work-item">
+            <span class="icon">🤝</span>
+            <div class="content"><strong>合作高校</strong><span>四川大学、成都开放大学、西南科技大学、成都理工大学、西华大学、内江师范学院、四川旅游学院等8所</span></div>
+        </div>
+        <div class="work-item">
+            <span class="icon">💻</span>
+            <div class="content"><strong>自有教学平台</strong><span>内部教务教学系统，支持小自考统考课程学习、历年真题练习、成考及国开全体系学习资源</span></div>
+        </div>
+        <div class="work-item">
+            <span class="icon">📍</span>
+            <div class="content"><strong>办学地址</strong><span>成都市锦江区锦东路568号摩根中心2栋19楼6-7号（政府批复地址）</span></div>
+        </div>
+    </div>
+
+    <!-- 4. 对学生要求 -->
+    <h2 class="section-title">📋 对学生要求</h2>
+    <p class="section-desc">欢迎有明确学习目标、愿意为之付出的学员加入：</p>
+    <div class="requirement-list">
+        <div class="requirement-item">
+            <span class="icon">📌</span>
+            <div class="content"><strong>学历基础</strong><span>报考专科需具备高中/中专同等学力；报考本科需具备国家承认的专科及以上学历。</span></div>
+        </div>
+        <div class="requirement-item">
+            <span class="icon">⏰</span>
+            <div class="content"><strong>学习态度</strong><span>认可学历提升的价值，愿意投入必要的时间和精力完成学业。</span></div>
+        </div>
+        <div class="requirement-item">
+            <span class="icon">📱</span>
+            <div class="content"><strong>配合管理</strong><span>能够配合学校的教学安排、考试通知及学籍管理要求。</span></div>
+        </div>
+        <div class="requirement-item">
+            <span class="icon">💬</span>
+            <div class="content"><strong>诚信守约</strong><span>提供真实有效的报名材料，遵守考试纪律和校规校纪。</span></div>
+        </div>
+    </div>
+
+    <!-- 5. 优势说明 -->
+    <h2 class="section-title">✨ 我们的优势</h2>
+    <div class="advantage-list">
+        <div class="advantage-card">
+            <span class="emoji">⚖️</span>
+            <h3>规范办学 · 值得信赖</h3>
+            <p>持有正规办学许可证，教育部备案公示教学点，所有流程依法依规，透明可查。</p>
+        </div>
+        <div class="advantage-card">
+            <span class="emoji">💎</span>
+            <h3>优质服务体系</h3>
+            <p>从报名到毕业，专属班主任全程跟进，及时响应你的每一个需求。</p>
+        </div>
+        <div class="advantage-card">
+            <span class="emoji">🚀</span>
+            <h3>全程帮助学生完成学业毕业</h3>
+            <p>学习规划、课程辅导、考前密训、毕业申请……我们陪你走好每一步，直至顺利拿证。</p>
+        </div>
+        <div class="advantage-card">
+            <span class="emoji">📱</span>
+            <h3>学习资源与平台支撑</h3>
+            <p>自有教务教学系统，含小自考统考课程学习、历年真题练习、成考合作高校学习资源、国开全体系学习资源。</p>
+        </div>
+    </div>
+
+    <!-- 6. 动态通知 -->
+    <h2 class="section-title">📢 动态 · 通知公告</h2>
+    <div class="news-item">
+    <span class="tag">案例</span>
+    <span class="text" onclick="toggleContent(this)">📖 【学员故事】从高中学历到研究生：一个“专本套读”逆袭的真实样本</span>
+    <span class="date">2026-07-04</span>
+</div><div class="news-content" style="display:none; padding:16px 20px; background:#f7faff; border-radius:10px; margin-bottom:12px; font-size:15px; line-height:1.8; color:#1e2d44;">
+
+    <p><strong>学生成功案例一</strong></p>
+    <p>更新于2026年7月4日</p>
+
+    <p><strong>奉同学：从二级警员到研究生"专本套读"逆袭之路</strong></p>
+
+    <p><strong>引言：一张高中文凭，困了她多少年</strong></p>
+
+    <p>在别人眼里，奉同学的工作不算差，四川某市基层派出所二级警员，体制内，稳定。</p>
+
+    <p>但只有她自己清楚，那张高中文凭像一堵看不见的墙，挡在她面前：同事们多是专科、本科学历，职级比她高两级（三级警司），二级警员是警员序列中的最初职级，每月工资比她多近千元。单位内部的晋升、调动、培训机会，优先给学历更高的人。</p>
+
+    <p>"你不是不努力，你只是输在了一张文凭上。"</p>
+
+    <p>这句话她没说出来，但她心里明白。2019年，她做了一个决定：用"专本套读"的方式，同时拿下专科和本科文凭。</p>
+
+    <p><strong>解决方案：专本套读，两年半抢跑</strong></p>
+
+    <p>什么是"专本套读"？是指在读专科时同步报考自考本科，两者并行推进。专科毕业时，本科也基本考完，可以无缝衔接申请本科毕业证。</p>
+
+    <p>奉*同学的选择路径是：</p>
+
+    <table>
+        <tr><th>时间</th><th>路径</th><th>学校</th><th>专业</th></tr>
+        <tr><td>2019年9月</td><td>网络教育专科</td><td>电子科技大学</td><td>计算机应用技术</td></tr>
+        <tr><td>2019年9月同期</td><td>应用型自考本科</td><td>西南财经大学</td><td>人力资源管理</td></tr>
+        <tr><td>2022年1月</td><td>专科毕业</td><td>电子科技大学</td><td>计算机应用技术</td></tr>
+        <tr><td>2022年6月</td><td>自考本科毕业</td><td>西南财经大学</td><td>人力资源管理</td></tr>
+        <tr><td>2022年10月</td><td>通过学位论文评审</td><td>西南财经大学</td><td>获学士学位</td></tr>
+        <tr><td>2023年3月</td><td>学士学位证书到手</td><td>—</td><td>—</td></tr>
+        <tr><td>2023年-2024年</td><td>考研成功上岸</td><td>—</td><td>—</td></tr>
+    </table>
+
+    <p>这个方案的难点在于：两条线同时跑，容错率极低。自考本科的平均通过周期是3-5年，大多数人需要补考、重考、延毕。而她必须在专科2.5年学制内，同步完成自考本科的全部科目，一门都不能挂，一门都不能拖。</p>
+
+    <p><strong>学习过程：疫情中的"硬扛"</strong></p>
+
+    <p>2022年，她自考本科的最后一年，也是疫情最严重的一年。作为派出所的二级警员，她的工作没有"居家办公"这回事。一级勤务、医院值守、社区管控……周末无休，连轴转是常态。</p>
+
+    <p>"那段时间，我根本分不清今天是周几。"她后来回忆说。</p>
+
+    <p>但她没有放弃。她把所有能用的碎片时间都用来复习：值班间隙、通勤路上、午休时间、深夜下班后……手机里存的全是自考资料，包里永远揣着一本教材。</p>
+
+    <p>2022年9月，她完成了自考本科全部科目考试。2022年10月，她通过学位论文评审——全部一次性通过，无一挂科。</p>
+
+    <p><strong>成果：三年换来了什么</strong></p>
+
+    <p>2022年9月，本科毕业证刚刚拿到，她就接到了人事调动通知：晋升至市区工作，职级提升，薪资同步上调。</p>
+
+    <p>2023年3月，西南财大学士学位证书到手。同年年底，参加研究生入学考试，次年考研成功上岸。从"高中学历"到"研究生在读"，完成了连续三级跳。</p>
+
+    <p><strong>她的金句</strong></p>
+
+    <p>"别问我怎么熬过来的，答案就一句话：'穷'得逼迫自己去改变现状。"</p>
+
+    <p>这句话是她在接受现代华曦教育老师回访时说的。不是"我想变得更好"，不是"我要实现人生价值"，而是一个更真实、更直接的理由："穷"得不想再穷下去了。</p>
+
+    <p>这个"穷"，既是知识和技能上的穷，也是工资上的穷，还是机会上的穷，更是职场天花板上的穷。从基层派出所二级警员到调动市区工作，学历提升对她来说，不是锦上添花，而是雪中送炭。</p>
+
+    <p><strong>给正在犹豫"要不要提升学历"的人一点参考</strong></p>
+
+    <p>奉同学的案例有几个值得关注的特点：</p>
+
+    <p>第一，她用"专本套读"抢出了时间差。如果不是同步推进，专科毕业后还要再花3-5年考本科，等拿到本科学历时可能已经错过了晋升窗口。她选择了最难但最快的方式。</p>
+
+    <p>第二，她在最困难的条件下坚持了下来。2022年的疫情和工作强度，给了她无数个"放弃的理由"。但她没有，因为她清楚，错过这个窗口，可能再也没有机会了。</p>
+
+    <p>第三，她证明了：学历不只是"敲门砖"，更是"通行证"。从二级警员到调动市上工作，再到考研上岸，每一次跃升都伴随着学历的升级。不是有了学历就一定有结果，但没有学历连入场券都拿不到。</p>
+
+    <p><strong>后记</strong></p>
+
+    <p>奉同学的故事，是现代华曦教育19年办学历史中最具代表性的案例之一。她不是天才，没有背景，没有捷径。她有的只是一张高中文凭、一份基层警员工作、一个"不想再穷下去"的念头，以及三年如一日咬牙坚持的行动。</p>
+
+    <p>她证明了：起点不代表终点，学历改变的不只是工资，还有人生的选项。</p>
+
+    <p style="font-size:13px; color:#8896b0; margin-top:12px; border-top:1px solid #e8edf5; padding-top:10px;">本文为"现代华曦教育学员故事"系列第1期。更多真实学员案例，请关注现代华曦教育官网动态。</p>
+
+</div><div class="news-list">
+
+        <!-- 这里下面就是我们要放新内容的地方 -->
+ <div class="news-item">
+    <span class="tag">通知</span>
+    <span class="text" onclick="toggleContent(this)">📢 2026秋国开报名进行中（截止10月）——优势·专业·对象·收费标准</span>
+    <span class="date">2026-07-03</span>
+</div><div class="news-content" style="display:none; padding:16px 20px; background:#f7faff; border-radius:10px; margin-bottom:12px; font-size:15px; line-height:1.8; color:#1e2d44;">
+
+    <p><strong>2026秋，国家开放大学报名进行中（截止时间：10月）</strong></p>
+    <p>更新于2026年7月3日</p>
+
+    <p>国家开放大学（简称"国开"）是教育部直属，以现代信息技术为支撑、面向社会成员提供学历与非学历继续教育服务的新型高等学校。2026年秋季招生已正式启动，现代华曦教育作为国开官方备案校外学习中心（编码5115700），负责本季招生与教学服务工作。</p>
+
+    <p><strong>一、国开学历提升的6大优势</strong></p>
+
+    <p><strong>1. 入学门槛低，学籍注册快</strong><br>
+    符合条件者报名即可注册入学，学籍信息在学信网及时可查，注册后1-2个月内可查询在读学籍。</p>
+
+    <p><strong>2. 学习节奏灵活，毕业周期可控</strong><br>
+    最快2.5年毕业，学籍最长保留8年。学员可根据自身工作情况自主安排学习进度，适合在职人员。</p>
+
+    <p><strong>3. 学习方式便捷，多终端支持</strong><br>
+    支持手机、平板、电脑等多种设备在线学习，课程可反复观看，工作学习两不误。</p>
+
+    <p><strong>4. 国家承认学历，用途广泛</strong><br>
+    国开毕业证为国家承认学历，学信网终身可查，可用于考公务员、考事业编、考研、职称评定等。符合条件的本科毕业生可申请学士学位。</p>
+
+    <p><strong>5. 学历+技能双发展</strong><br>
+    部分专业融合职业技能培养内容，帮助学员在提升学历的同时增强岗位竞争力。</p>
+
+    <p><strong>6. 奖学金与毕业生激励制度</strong><br>
+    设立国家开放大学总部和成都分部两级奖学金制度，以及优秀毕业生评选机制，激励在职学员努力奋进。</p>
+
+    <p><strong>二、招生专业</strong><br>
+    国开2026年秋季本科开设25个专业，专科开设23个专业。现代华曦教育重点推荐以下专业：</p>
+
+    <p><strong>专科专业（7个）：</strong></p>
+    <table>
+        <tr><th>序号</th><th>专业名称</th></tr>
+        <tr><td>1</td><td>药学</td></tr>
+        <tr><td>2</td><td>大数据与会计</td></tr>
+        <tr><td>3</td><td>行政管理</td></tr>
+        <tr><td>4</td><td>计算机网络技术（网络管理方向）</td></tr>
+        <tr><td>5</td><td>建设工程管理</td></tr>
+        <tr><td>6</td><td>智慧健康养老服务与管理</td></tr>
+        <tr><td>7</td><td>护理</td></tr>
+    </table>
+
+    <p><strong>本科专业（7个）：</strong></p>
+    <table>
+        <tr><th>序号</th><th>专业名称</th></tr>
+        <tr><td>1</td><td>工商管理</td></tr>
+        <tr><td>2</td><td>药学</td></tr>
+        <tr><td>3</td><td>土木工程</td></tr>
+        <tr><td>4</td><td>计算机科学与技术</td></tr>
+        <tr><td>5</td><td>护理学</td></tr>
+        <tr><td>6</td><td>市场营销</td></tr>
+        <tr><td>7</td><td>工程造价</td></tr>
+    </table>
+
+    <p><strong>三、招生对象</strong></p>
+
+    <p><strong>专科层次：</strong><br>
+    具有普通高中、职业高中、中专或技工学校学历者，均可报名。<br>
+    护理专业特殊要求：须为中等专业学校护理专业毕业，并持有护士执业资格证书。<br>
+    药学专业特殊要求：须为医药卫生相关行业从业人员。</p>
+
+    <p><strong>本科层次（专科起点）：</strong><br>
+    具有国民教育系列专科及以上学历者。<br>
+    护理学专业特殊要求：须具有专科学历、持有护士执业资格证书。<br>
+    药学专业特殊要求：须为医药卫生相关行业从业人员。</p>
+
+    <p><strong>四、收费标准</strong></p>
+    <table>
+        <tr><th>费用项目</th><th>收费标准</th></tr>
+        <tr><td>报名费</td><td>58元</td></tr>
+        <tr><td>本科段学费</td><td>73学分 × 80元/学分</td></tr>
+        <tr><td>专科段学费</td><td>79学分 × 70元/学分</td></tr>
+        <tr><td>考试费</td><td>40元/科次</td></tr>
+    </table>
+
+    <p><strong>五、报名方式</strong><br>
+    报名截止时间为2026年10月。符合条件者可直接联系现代华曦教育招生老师办理报名手续。</p>
+
+    <p>电话：138-8053-1856<br>
+    邮箱：279321749@qq.com<br>
+    办公地址：成都市锦江区锦东路568号摩根中心2栋19楼6-7号</p>
+
+    <p style="font-size:13px; color:#8896b0; margin-top:12px; border-top:1px solid #e8edf5; padding-top:10px;">本文数据来源：国家开放大学2026年秋季招生简章及现代华曦教育教务教学系统。信息更新至2026年7月。</p>
+
+</div>       
+<div class="news-item">
+    <span class="tag ">观点</span>
+    <span class="text" onclick="toggleContent(this)">💬 从事学历提升19年，毕业了34084人，最想告诉你的几句真话</span>
+    <span class="date">2026-07-02</span>
+</div><div class="news-content" style="display:none; padding:16px 20px; background:#f7faff; border-radius:10px; margin-bottom:12px; font-size:15px; line-height:1.8; color:#1e2d44;">
+
+    <p><strong>从事学历提升19年，毕业了34084人，最想告诉你的几句真话</strong></p>
+    <p>更新于2026年7月2日</p>
+
+    <p>我们是现代华曦教育。</p>
+
+    <p>从2007年到现在，19年，我们送走了34084名毕业生。他们走进办公室时的状态，和此刻正在看这篇文章的你一样：心里有个念头想提升学历，但又有点拿不准——我基础行不行？时间够不够？选什么方式好？毕业证拿得到吗？</p>
+
+    <p>今天我们想把这些年积累下来的体会，浓缩成5句话，说给你听。</p>
+
+    <p><strong>第一句：先想清楚"我为什么要提升学历"，再决定选什么专业和方式</strong><br>
+    不是所有人都适合同一种路径。我们见过太多人，看别人报什么自己就报什么，结果学到一半发现不适合，要么硬扛得很辛苦，要么干脆放弃了。</p>
+
+    <p>根据你的实际情况，我们对三类主要学历提升方式做一个简单梳理，供你参考：</p>
+
+    <p>如果你离开学校很久了，基础薄弱，平时工作也忙，自律性不太高，但确实需要一个学历——国家开放大学可能是更适合你的选择。免试入学，学习方式灵活，难度相对友好，适合希望稳妥拿证、不想给自己太大压力的同学。</p>
+
+    <p>如果你有一点学习基础，不追求最快拿证，更看重过程稳妥——成人高考是成熟度最高的路径。每年10月参加全国统考，录取后按学期推进，节奏稳定，分数线一般不算太高，对在职人员比较友好。从报考到毕业周期稍长一些，但胜在稳妥、成熟、选择多。</p>
+
+    <p>如果你希望毕业快一点，也愿意为此付出相应的精力，还希望学历的社会认可度更高一些——四川省小自考是值得认真考虑的选项。统考科目少，时间快，但需要自己保持节奏，适合有明确目标、愿意配合学习节奏的同学。</p>
+
+    <p>选哪种方式没有绝对的好坏，只有适不适合你。如果不确定自己适合哪种，可以找我们的老师聊一聊，帮你做个简单的评估，提出具体建议。</p>
+
+    <p><strong>第二句：千万别走"捷径"，有些底线碰不得</strong><br>
+    这句话说出来可能会让你觉得我们在说教，但我们真的是见过太多教训，必须提醒你。</p>
+
+    <p>我们见过有人办了假的前置学历，毕业证也拿到了，但后来考编成功政审时，个人档案里材料前后不一，被查到之后，好不容易的考编成果被取消，还被记入了个人诚信记录；</p>
+
+    <p>我们见过有人从报名到考试一次课没上过、一本书没翻过，考场没到过，结果被监管巡考负责人发现是别人在为你代考替考，直接按考试违规处理，成绩取消，学籍取消；</p>
+
+    <p>我们也见过有人找人代写毕业论文，被系统查重和AI比对发现，直接取消了学位申请资格……</p>
+
+    <p>有的人为此付出了更高的代价——时间、金钱，还有一些很难弥补的东西。</p>
+
+    <p>学历提升这件事，没有"花钱买证"这条路。</p>
+
+    <p>正规的学历提升，每一步都需要你自己在场：上课、复习、考试、写论文。我们能做的是给你规划好路径、提供好资料、提醒好时间、解答好问题，但最终走完这条路的人，必须是你自己。不然今后你在工作岗位上，但凡提到专业知识点，你都一脸蒙圈露马脚，丢死人了！</p>
+
+    <p>这不是我们不想帮忙，而是因为——只有你自己走下来的，才是真正属于你的。</p>
+
+    <p><strong>第三句：报名了，就别弃考。坚持本身，就是一种收获</strong><br>
+    这句话，是前面34084名学姐学哥转告你的。</p>
+
+    <p>他们中的大多数人，在备考过程中都想过放弃：今天太累了，不学了；反正一次考不过还有下次；我都这个年纪了，何必折腾自己……</p>
+
+    <p>但他们最后都撑过来了。</p>
+
+    <p>成人学历提升这件事，说白了，不是选拔天才，而是考验普通人能不能把一件事从头到尾做完。</p>
+
+    <p>我们有一个学员，四十多岁了，在成都一个社区做基层工作，报了名之后前三个月基本没怎么学。后来我们老师每周给他打一次电话，不催他，就是聊聊进度、问问困难。他后来说："其实老师也没说什么特别的话，但有人惦记着这件事，我自己就觉得不能掉链子。"</p>
+
+    <p>后来他考过了，拿到毕业证那天专门来办公室坐了坐，说了一句让我们印象很深的话：</p>
+
+    <p>"我没觉得自己变聪明了，但我觉得自己变得靠谱了。答应自己的事，终于做到了。"</p>
+
+    <p>如果你有孩子，这或许也是一次"身教"的机会——让他们看到，爸爸妈妈也在学习，也在考试，也在努力做完一件事。</p>
+
+    <p><strong>第四句：别被"学历贬值论"带偏，你的经历本身就是资本</strong><br>
+    网上总有声音说："现在学历不值钱了""满大街都是大学生"。</p>
+
+    <p>我们想告诉你：别信。</p>
+
+    <p>我们送走的34084名毕业生里，绝大多数人拿到学历之后，都或多或少发生了变化——有的顺利升了职，有的考上了编制，有的终于有资格评职称了，有的职称升级甚至退休时，退休金比其他类似境遇的高了一长截。</p>
+
+    <p>学历确实不能保证一切，但它能帮你跨过很多门槛。没有它，你可能连投简历的资格都没有；有了它，至少你有机会站到对方面前，用自己的能力说话。</p>
+
+    <p>而且说实话，你比刚出校门的大学生多了一样东西——职场经验。</p>
+
+    <p>你懂人情世故，你知道怎么跟同事配合，你经历过项目压力，你吃过苦也扛过事。这些能力，不是一张文凭能替代的，但当你把文凭拿到手，这些能力就会一起发挥作用。</p>
+
+    <p>学历是帮你开门的钥匙，门开了之后，能走多远，靠的还是你这些年攒下来的本事。所以你不需要否定自己，你只是把欠缺的那一块补上而已。</p>
+
+    <p><strong>第五句：如果条件允许，专科之后继续读本科，本科期间争取拿学位证</strong><br>
+    这句话可能有点远，但我们希望你能提前知道：国开、成教、小自考三种类型的本科都能申请学士学位。</p>
+
+    <p>如果你现在是专科学历，读完专科之后，趁热打铁继续读本科。很多过来人的教训是：专科毕业就停了，过了几年想再升本科，一切从头再来，比当年难得多——年龄大了、精力少了、政策也可能变了。</p>
+
+    <p>如果你直接读本科，或者专科之后继续升本，在有条件的情况下，争取把学士学位证也拿下来，为自己今后的职场发展留够空间。因为大多高校的学位证申请是毕业后的两年内，过期作废，申请权就没有了。</p>
+
+    <p>毕业证和学位证，是两回事。</p>
+
+    <p>考公务员、考事业编、考研，很多岗位和学校都要求"双证齐全"。没有学位证，你可能在报名那一关就被筛掉了。</p>
+
+    <p>拿到学位证确实要多花一些功夫，学位英语要过，论文要达到一定水平，这些付出，对于你未来的选择空间来说，值得。提醒一点，有的高校可以免学位英语的哦。你现在的目标可能只是"拿个证"，但当证拿到手之后，你的想法可能就不一样了。给自己留一条更宽的路，不吃亏。</p>
+
+    <p><strong>写在最后</strong><br>
+    19年，34084人。</p>
+
+    <p>这34084人里，有一个人我们一直记得。</p>
+
+    <p>一位58岁才拿到四川大学成教本科土木工程专业的学员，因为生病，最后一次来参加考试的时候，是家人用轮椅推着他进考场的。就这样，他用2.5年的时间，修完了本科全部课程，顺利毕业。</p>
+
+    <p>我们被他感动，不为别的，就为那辆轮椅推进考场的那一刻——他没有放弃自己，家人也没有放弃他，国家的继续教育政策没有忘记他。</p>
+
+    <p>19年来，现代华曦服务的学生，年龄最小的17岁，最大的就是这位58岁的学员。他们背景不同、起点不同、遇到的困难也不同，但他们都做对了同一件事：没有在半路转身离开。</p>
+
+    <p>我们见过太多人从犹豫到下定决心，从考场出来长舒一口气，到拿着毕业证合影时笑得最开心。</p>
+
+    <p>你不是一个人在走这条路。前面已经有34084个人走完了，他们能行，你也行。</p>
+
+    <p>如果你有什么拿不准的，不知道选什么专业、不知道自己适合哪种方式、不确定自己能不能坚持下来，欢迎来问问我们。</p>
+
+    <p>我们不催你报名，但可以帮你把路看清楚。</p>
+
+    <p>路选对了，走慢一点，也一定能到。</p>
+
+    <p>我们陪你。</p>
+
+    <p>19年，34084人，我们还会继续走下去。下一个，希望是你。</p>
+
+    <p style="font-size:13px; color:#8896b0; margin-top:12px; border-top:1px solid #e8edf5; padding-top:10px;">本文数据来源：现代华曦教务教学系统原始数据，截至2026年春季。</p>
+
+</div>
+<div class="news-item">
+            <span class="tag important">置顶</span>
+            <span class="text" onclick="toggleContent(this)">🚀 现代华曦教育全新起航——19年学历提升机构，重新出发</span>
+            <span class="date">2026-07-01</span>
+        </div>
+        <div class="news-content" style="display:none; padding:16px 20px; background:#f7faff; border-radius:10px; margin-bottom:12px; font-size:15px; line-height:1.8; color:#1e2d44;">
+            <p><strong>现代华曦   全新起航</strong></p>
+            <p>更新于2026年7月1日</p>
+            <p>2007年3月22日，成都市锦江区，一所专注于成人继续教育的培训机构悄然成立。彼时没有人能预料到，这个以"现代华西"为名的教育中心，会在接下来的19年间，累计培养出34,084名毕业生，并成为四川大学、国家开放大学等7所高校的官方备案校外教学点。</p>
+            <p>今天，我们想重新介绍一下自己——现代华曦教育。</p>
+            <p><strong>我们是谁</strong><br>现代华曦教育（全称：成都市锦江区现代华曦成人培训学校）是经成都市锦江区教育局审批、民政局登记注册的民办非企业法人教育机构，统一社会信用代码：52510104660451878F。办学许可证：教民251010470000002号，有效期至2029年2月12日，办学主体持续合规。</p>
+            <p><strong>我们的"双重身份"：教育部备案教学点 + 高校官方校外助学点</strong><br>现代华曦教育具备的双重备案身份，在全国同类机构中并不多见：</p>
+            <p>✅ 四川大学高等学历继续教育校外教学点：2024年、2025年连续两年通过教育部备案公示，负责四川大学成人高考（函授）与应用型自考（小自考）的招生与教学服务。</p>
+            <p>✅ 国家开放大学校外教学点：备案编码纳入国家开放大学体系，2024年、2025年连续备案。</p>
+            <p><strong>我们的"朋友圈"：7所合作高校</strong><br>四川大学、成都开放大学、西南科技大学、内江师范学院、四川旅游学院、成都理工大学、西华大学，覆盖成人高考、自学考试、开放教育三大主流学历提升通道。</p>
+            <p><strong>我们的"成绩单"：34,084名毕业生</strong><br>截至2026年春季，累计培养毕业生34,084人，涵盖医疗卫生（约50%）、企业/公司（约30%）、教育行业（约10%）、政府/公共事业（约5%）、其他（约5%）。</p>
+            <p><strong>我们的"新名字"：一段被官方认可的沿革</strong><br>2023年6月，成都市锦江区行政审批局正式批复（锦审批复〔2023〕24号），同意"成都市锦江区现代华西教育中心"更名为"成都市锦江区现代华曦成人培训学校"。"西"改为"曦"——晨曦的"曦"，寓意新的开始。</p>
+            <p><strong>我们做了什么，还在做什么</strong><br>已完成：自主研发30件国家版权局计算机软件著作权，覆盖招生咨询、在线学习、教务管理、财务管理等全业务流程；建立现代华曦教育教务教学系统平台（xt.xdhxjy.com）。<br>正在进行：全面升级官网，构建面向AI时代的知识服务体系；整理政策解读与学员案例；持续关注政策变化，与合作高校保持联动。</p>
+            <p><strong>全新起航，重新出发</strong><br>全新起航，不是从零开始，而是把已有的家底整理清楚，以更透明、更可信的方式，重新走到台前。从今天起，现代华曦教育官网将成为我们发布信息的核心阵地。</p>
+            <p><strong>欢迎回来，或初次见面</strong><br>如果你是我们的老朋友——感谢你19年间的信任与同行。如果你是新朋友——欢迎光临。我们用19年的时间，把路走通了，把资质备齐了，把流程理顺了。剩下的，就是陪你把学历这件事，一步一个脚印地完成。</p>
+            <p>现代华曦教育，全新起航。👋</p>
+            <p style="font-size:13px; color:#8896b0; margin-top:12px; border-top:1px solid #e8edf5; padding-top:10px;">本文数据来源：教育部2024、2025年《高等学校继续教育校外教学点备案结果》公示、现代华曦办学许可证（教民251010470000002号）、民办非企业单位登记证书、教务教学系统原始数据。信息更新至2026年6月。</p>
+        </div>
+
+        <!-- 以下是原有的公告 -->
+        <div class="news-item">
+            <span class="tag important"></span>
+            <span class="text">
+    </div>
+
+    <!-- 7. 喜报案例 -->
+    <h2 class="section-title">🎉 喜报 · 成功案例</h2>
+    <p class="section-desc">以下为近年部分学员毕业/学位获取案例（已做脱敏处理）：</p>
+    <div class="case-grid">
+        <div class="case-item">
+            <span class="badge">🎓</span>
+            <div class="name">何** 同学</div>
+            <div class="detail">专升本 · 北京语言大学汉语言文学 → 四川大学法学</div>
+            <div class="school">✅ 两次获得学士学位，两次考取公务员（某市 → 天府新区）</div>
+        </div>
+        <div class="case-item">
+            <span class="badge">🎓</span>
+            <div class="name">王** 同学</div>
+            <div class="detail">四川大学 · 护理学本科（专升本）</div>
+            <div class="school">✅ 2023年6月毕业获学位，通过编制考试，薪资上调1800元</div>
+        </div>
+        <div class="case-item">
+            <span class="badge">⏳</span>
+            <div class="name">案例更新中</div>
+            <div class="detail">下周发布</div>
+            <div class="school">敬请期待</div>
+        </div>
+        <div class="case-item">
+            <span class="badge">⏳</span>
+            <div class="name">案例更新中</div>
+            <div class="detail">下周发布</div>
+            <div class="school">敬请期待</div>
+        </div>
+    </div>
+
+    <!-- 联系方式 -->
+    <div class="contact-box">
+        <div class="info">
+            <div><span class="label">📞 电话</span><a href="tel:13880531856">138-8053-1856</a></div>
+            <div><span class="label">✉️ 邮箱</span><a href="mailto:279321749@qq.com">279321749@qq.com</a></div>
+            <div><span class="label">🕐 工作时间</span><span>周一至周日 9:00 – 18:00</span></div>
+        </div>
+        <div class="badge">📩 欢迎咨询</div>
+    </div>
+
+    <div class="footer-note">
+        © 2026 成都市锦江区现代华曦成人培训学校 &nbsp;|&nbsp;
+        地址：成都市锦江区锦东路568号摩根中心2栋19楼6-7号 &nbsp;|&nbsp;
+        办学许可证号：教民2号
+    </div>
+</div>
+
+<script>
+function toggleContent(el) {
+    var parent = el.parentElement;
+    var content = parent.nextElementSibling;
+    if (content && content.classList.contains('news-content')) {
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+}
+</script>
+
+</body>
+</html>
